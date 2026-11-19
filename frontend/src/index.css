@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap");
+
+:root {
+  --bg: #eef1f6;
+  --panel: #ffffff;
+  --ink: #141a2e;
+  --ink-soft: #56607a;
+  --line: #d9dee9;
+  --accent: #3347ff;
+  --accent-ink: #ffffff;
+  --good: #0f8b6d;
+  --good-bg: #e2f4ee;
+  --warn: #b7791f;
+  --gap: #c23b2a;
+  --gap-bg: #fbe9e6;
+
+  --radius-lg: 18px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body: "Figtree", system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1220;
+    --panel: #161c30;
+    --ink: #eceff8;
+    --ink-soft: #9aa4c0;
+    --line: #272f4a;
+    --accent: #7c8bff;
+    --accent-ink: #0e1220;
+    --good: #3ccb9f;
+    --good-bg: #12342b;
+    --warn: #e0a83c;
+    --gap: #ff8a78;
+    --gap-bg: #3a1d19;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
