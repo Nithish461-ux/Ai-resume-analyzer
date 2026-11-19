@@ -51,8 +51,8 @@ async def analyze_resume(
         raise HTTPException(status_code=400, detail="Job description is too short.")
 
     data = await resume.read()
-    if len(data) > 4 * 1024 * 1024:
-        raise HTTPException(status_code=400, detail="PDF must be under 4 MB.")
+    if len(data) > 5 * 1024 * 1024:
+        raise HTTPException(status_code=400, detail="PDF must be under 5 MB.")
 
     text = extract_pdf_text(data)
     if len(text) < 50:
